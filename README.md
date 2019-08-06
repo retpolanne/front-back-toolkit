@@ -8,6 +8,7 @@ A Django and React Native Toolkit
 Node v10.16.1 LTS (Installed from http://npm.github.io/installation-setup-docs/installing/using-the-node-installer.html)
 Pipenv (Installed from https://github.com/pypa/pipenv)
 Expo-cli (Installed from https://facebook.github.io/react-native/docs/getting-started)
+Bumpversion (Installed from https://pypi.org/project/bumpversion/)
 
 ## Pipenv
 
@@ -36,3 +37,11 @@ Prod Dependencies:
 ## Testing
 
 https://docs.expo.io/versions/latest/guides/testing-with-jest/
+
+## Making a release
+
+### Semver
+
+Choose the level (major, minor, patch) and run:
+
+`RELEASE=level make bumpversion`
