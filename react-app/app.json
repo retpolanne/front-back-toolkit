@@ -25,10 +25,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "me.vinicyus.front_back_toolkit"
+      "bundleIdentifier": "me.vinicyus.frontbacktoolkit"
     },
     "android": {
-      "package": "me.vinicyus.front_back_toolkit"
+      "package": "me.vinicyus.frontbacktoolkit"
     }
   }
 }

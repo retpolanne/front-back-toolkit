@@ -44,7 +44,19 @@ Prod Dependencies:
 
 https://docs.expo.io/versions/latest/guides/testing-with-jest/
 
+### Python test matching
+
+`TEST=some.test make test-backend`
+
 ## Making a release
+
+## Building the app
+
+`PLATFORM=android|ios make build-frontend`
+
+## Publishing the app
+
+`make release-frontend`
 
 ### Semver
 
