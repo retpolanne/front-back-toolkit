@@ -8,6 +8,7 @@ matrix:
     - make install-node-deps
     script:
     - make test-frontend
+    - make lint-frontend
     - codecov
 env:
   global:

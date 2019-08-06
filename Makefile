@@ -22,3 +22,8 @@ test: test-frontend test-backend
 
 test-frontend:
 	cd $(NODE_DIR) && npm run testFinal
+
+lint: lint-frontend lint-backend
+
+lint-frontend:
+	cd $(NODE_DIR) && npm run lint

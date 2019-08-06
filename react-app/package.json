@@ -9,7 +9,8 @@
     "test": "jest --watch --coverage=false --changedSince=origin/master",
     "testDebug": "jest -o --watch --coverage=false",
     "testFinal": "jest",
-    "updateSnapshots": "jest -u --coverage=false"
+    "updateSnapshots": "jest -u --coverage=false",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "expo": "^34.0.1",
@@ -20,8 +21,12 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^6.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-universe": "^1.0.7",
+    "eslint-plugin-react": "^7.14.3",
     "jest-expo": "^34.0.0",
     "jest-junit": "^7.0.0",
+    "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6"
   },
   "jest": {
