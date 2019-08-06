@@ -167,8 +167,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
-.env.test
+react-app/.env
+react-app/.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -190,3 +190,19 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Jest
+react-app/coverage/**/*
+
+# Expo
+react-app/node_modules/**/*
+react-app/expo/*
+react-app/pm-debug.*
+react-app/*.jks
+react-app/*.p8
+react-app/*.p12
+react-app/*.key
+react-app/*.mobileprovision
+react-app/*.orig.*
+react-app/web-build/
+react-app/web-report/
