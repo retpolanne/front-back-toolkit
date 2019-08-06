@@ -4,6 +4,7 @@ matrix:
     node_js:
     - 10.16.1
     install:
+    - npm install -g codecov
     - make install-node-deps
     script:
     - make test-frontend

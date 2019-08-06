@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^6.0.0",
-    "codecov": "^3.5.0",
     "jest-expo": "^34.0.0",
     "jest-junit": "^7.0.0",
     "react-test-renderer": "^16.8.6"
