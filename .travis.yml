@@ -3,5 +3,7 @@ matrix:
     - language: node_js
       node_js:
         - "10.16.1"
+      install:
+        - make install-node-deps
       script:
         - make test-frontend
