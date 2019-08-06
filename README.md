@@ -10,6 +10,12 @@ Pipenv (Installed from https://github.com/pypa/pipenv)
 Expo-cli (Installed from https://facebook.github.io/react-native/docs/getting-started)
 Bumpversion (Installed from https://pypi.org/project/bumpversion/)
 
+## Make it yours
+
+To rename this project, just:
+
+`NAME=my-new-awesome-app make rename`
+
 ## Pipenv
 
 ### Install dependencies
