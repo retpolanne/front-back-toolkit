@@ -196,7 +196,7 @@ react-app/coverage/**/*
 
 # Expo
 react-app/node_modules/**/*
-react-app/expo/*
+react-app/.expo/*
 react-app/pm-debug.*
 react-app/*.jks
 react-app/*.p8
