@@ -38,13 +38,16 @@ makemigrations:
 migrate:
 	cd $(PYTHON_DIR) && pipenv run python manage.py migrate
 
-test: test-frontend test-backend
+test: test-frontend test-backend test-behave
 
 test-frontend:
 	cd $(NODE_DIR) && npm run testFinal
 
 test-backend:
 	cd $(PYTHON_DIR) && pipenv run python manage.py test $(TEST) --settings=$(SETTINGS)
+
+test-behave:
+	cd $(PYTHON_DIR) && pipenv run behave
 
 lint: lint-frontend lint-backend
 

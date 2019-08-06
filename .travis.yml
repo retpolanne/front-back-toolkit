@@ -19,9 +19,12 @@ matrix:
     - 3.7
     install:
     - pip3 install pipenv
+    - pip3 install codecov
     - make install-python-deps
     script:
     - make test-backend
+    - make test-behave
+    - codecov
 env:
   global:
   - secure: OY5QK1AgQXqP8cHh4BehUyh2fdK/7x7FvYL0CtBhUIV/SWXiH/rMmZ3azbfWAkuTMCBZH+9SbdxCxhgRrZlWbzkEEbbtwR1hg9mCr/B38L7k28do8doyn7C+7ZMdoczX4JvuNkJagFzFLP8+6sKiVvapM6UC9Oq8ANaplWoc0gQ3YVBXJ9pmgQvjPI1dEuImhHoK46BI1+Vmt0Tg1s/ZidrSwOomzCazDFAWtyRrAveu4sKN0xKQ/WXTmpqSaclvh3ZZdNrehsugPMpjsAkMn3iMSJk1rtxVXNsWGony0L2Goo5fhrT4hLRby8z8BcaUDgaxGysZg4dGwku5k4SupFwdPHZN/WpU2dgLmNPBxTcq3xyD7+XYdq3nfSuYTkCyEEtxhHH+9CF2j0nqxBett4Iz++dZCASl+NqGkKQs7zxH0TNL30Yye0QSzWysOQmw+zsWRZs1kPq3gVU/vXs69uIODOYr2Mnd4HUSjFjpi9ph+XgB1I4lB4sogwyyiq6ydR2iKSE6GKj46czl/Mvh1AR9cXBkuBbnJBXePoCDrADvsc3dqIk3oA6oED3cHAeU0go3qaBfz8Cm4kePW65N4ZKn1w+VW8VYnSsnjgLgsrou9C/voYCMDDcqmOW0IUY32sSSUgSAmz+GaVNaEnzNPwlWKvvDEaX4Hh/sWe4IotM=
