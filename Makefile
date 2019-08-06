@@ -9,8 +9,8 @@ INSTALL_FLAG=--$(ENV)
 endif
 
 rename:
-	find . -path './.git' -prune -o -path ./Makefile -prune -o -path './react-app/assets' -prune -o -path './react-app/node_modules' -prune -o -exec sed 's/$(DEFAULT_NAME)/$(NAME)/g' {} \;
-	find . -path './.git' -prune -o -path ./Makefile -prune -o -path './react-app/assets' -prune -o -path './react-app/node_modules' -prune -o -exec sed 's/$(ALT_NAME)/$(NAME)/g' {} \;
+	find . -path './.git' -prune -o -path ./Makefile -prune -o -path './react-app/assets' -prune -o -path './react-app/node_modules' -prune -o -exec sed -i "" 's/$(DEFAULT_NAME)/$(NAME)/g' {} \;
+	find . -path './.git' -prune -o -path ./Makefile -prune -o -path './react-app/assets' -prune -o -path './react-app/node_modules' -prune -o -exec sed -i "" 's/$(ALT_NAME)/$(NAME)/g' {} \;
 
 install-python-deps:
 	cd $(PYTHON_DIR) && pipenv install $(INSTALL_FLAG)
