@@ -1,4 +1,7 @@
 # front-back-toolkit
+[![Build Status](https://travis-ci.org/vinicyusmacedo/front-back-toolkit.svg?branch=master)](https://travis-ci.org/vinicyusmacedo/front-back-toolkit)
+[![codecov](https://codecov.io/gh/vinicyusmacedo/front-back-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/vinicyusmacedo/front-back-toolkit)
+
 A Django and React Native Toolkit
 
 ## Requirements
