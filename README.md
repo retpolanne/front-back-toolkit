@@ -63,3 +63,6 @@ https://docs.expo.io/versions/latest/guides/testing-with-jest/
 Choose the level (major, minor, patch) and run:
 
 `RELEASE=level make bumpversion`
+
+### TODO
+- [ ] Run Codecov only once

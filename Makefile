@@ -49,6 +49,9 @@ test-backend:
 test-behave:
 	cd $(PYTHON_DIR) && pipenv run behave
 
+test-backend-ci:
+	cd $(PYTHON_DIR) && pipenv run coverage run --source='.' manage.py test --settings=$(SETTINGS)
+
 lint: lint-frontend lint-backend
 
 lint-frontend:

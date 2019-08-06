@@ -22,7 +22,8 @@ matrix:
     - pip3 install codecov
     - make install-python-deps
     script:
-    - make test-backend
+    - make test-backend-ci
+    - make lint-backend
     - make test-behave
     - codecov
 env:
