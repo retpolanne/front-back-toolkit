@@ -4,7 +4,7 @@ matrix:
     node_js:
     - 10.16.1
     cache:
-      - react-app/.npm
+    - react-app/.npm
     install:
     - npm install -g codecov
     - make install-node-deps
@@ -12,6 +12,9 @@ matrix:
     - make test-frontend
     - make lint-frontend
     - codecov
+    env:
+    - EXPO_USER=westeros
 env:
   global:
-    secure: OY5QK1AgQXqP8cHh4BehUyh2fdK/7x7FvYL0CtBhUIV/SWXiH/rMmZ3azbfWAkuTMCBZH+9SbdxCxhgRrZlWbzkEEbbtwR1hg9mCr/B38L7k28do8doyn7C+7ZMdoczX4JvuNkJagFzFLP8+6sKiVvapM6UC9Oq8ANaplWoc0gQ3YVBXJ9pmgQvjPI1dEuImhHoK46BI1+Vmt0Tg1s/ZidrSwOomzCazDFAWtyRrAveu4sKN0xKQ/WXTmpqSaclvh3ZZdNrehsugPMpjsAkMn3iMSJk1rtxVXNsWGony0L2Goo5fhrT4hLRby8z8BcaUDgaxGysZg4dGwku5k4SupFwdPHZN/WpU2dgLmNPBxTcq3xyD7+XYdq3nfSuYTkCyEEtxhHH+9CF2j0nqxBett4Iz++dZCASl+NqGkKQs7zxH0TNL30Yye0QSzWysOQmw+zsWRZs1kPq3gVU/vXs69uIODOYr2Mnd4HUSjFjpi9ph+XgB1I4lB4sogwyyiq6ydR2iKSE6GKj46czl/Mvh1AR9cXBkuBbnJBXePoCDrADvsc3dqIk3oA6oED3cHAeU0go3qaBfz8Cm4kePW65N4ZKn1w+VW8VYnSsnjgLgsrou9C/voYCMDDcqmOW0IUY32sSSUgSAmz+GaVNaEnzNPwlWKvvDEaX4Hh/sWe4IotM=
+  - secure: OY5QK1AgQXqP8cHh4BehUyh2fdK/7x7FvYL0CtBhUIV/SWXiH/rMmZ3azbfWAkuTMCBZH+9SbdxCxhgRrZlWbzkEEbbtwR1hg9mCr/B38L7k28do8doyn7C+7ZMdoczX4JvuNkJagFzFLP8+6sKiVvapM6UC9Oq8ANaplWoc0gQ3YVBXJ9pmgQvjPI1dEuImhHoK46BI1+Vmt0Tg1s/ZidrSwOomzCazDFAWtyRrAveu4sKN0xKQ/WXTmpqSaclvh3ZZdNrehsugPMpjsAkMn3iMSJk1rtxVXNsWGony0L2Goo5fhrT4hLRby8z8BcaUDgaxGysZg4dGwku5k4SupFwdPHZN/WpU2dgLmNPBxTcq3xyD7+XYdq3nfSuYTkCyEEtxhHH+9CF2j0nqxBett4Iz++dZCASl+NqGkKQs7zxH0TNL30Yye0QSzWysOQmw+zsWRZs1kPq3gVU/vXs69uIODOYr2Mnd4HUSjFjpi9ph+XgB1I4lB4sogwyyiq6ydR2iKSE6GKj46czl/Mvh1AR9cXBkuBbnJBXePoCDrADvsc3dqIk3oA6oED3cHAeU0go3qaBfz8Cm4kePW65N4ZKn1w+VW8VYnSsnjgLgsrou9C/voYCMDDcqmOW0IUY32sSSUgSAmz+GaVNaEnzNPwlWKvvDEaX4Hh/sWe4IotM=
+  - secure: oJSjU8339/6hliTDivejGSJdmqt2bqMY51P5X/I3D6vJUpJG2hhTnBKRlLReSZCFFmTOGLCm6skAU/sG8myqT6gYlXZoeploemcGtnFa/uizw94Xn+XdQ3zkbkPzGcs7EG/gBR5iz5ScPG1Ubcdne/aK6VGt+g5HO7AtRsaWURSt1vZ+4YRRDCUi8xFSwBSrlVOyUD7BKrog5PIBklZKvzAdQ44BfocDVmUNuvsiAUpZTIZUWRtidYh1pwQWD7x+kBECqmlnGkqFg7Sc6wDEulNFc5datzp3Xrsk8aR9r+o57aSVfrBZJeHujeHKdIV+vijoAS2j4LbeTvDhlWmVBpdh0W5S2BLly8CV7uQjtqtf4s306QwPWKMg6nTDZLzKz1wW5EEE7t6kiaAbEB42LviVXmXGj/NoL+enw0SD2WL9WCBd81KUadlA7MDzqUVe4mJFJJWARTLGvtdglfzGJjUbzzKARP4dyB5iq36aIfLBXiq3MapSUrpNCV/4tUO/XBiOezmg2XDYkzZz6SU97i2joX4jksD3OMQJ42JrdWOHnVEWvWA9UWRvhXN6w231BpC9vVTmV2JufYznYCH1ScOXM+PuMD+sgWfpV4OBjp1wmM3yObNWXBAyenuw+KPrHLO8unLuLqj1W1Q2mUSqv/y1uQwbqTkuX7/uai29pbs=

@@ -11,7 +11,7 @@
     "testFinal": "jest",
     "updateSnapshots": "jest -u --coverage=false",
     "lint": "./node_modules/.bin/eslint .",
-    "publish": "./node_modules/.bin/expo publish"
+    "publish": "./node_modules/.bin/expo login -u $EXPO_USER -p $EXPO_PWD && ./node_modules/.bin/expo publish"
   },
   "dependencies": {
     "react": "16.8.3",
