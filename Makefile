@@ -61,12 +61,12 @@ lint-backend:
 	cd $(PYTHON_DIR) && find . -type f -name "*.py" -exec pipenv run pylint {} \;
 
 build-frontend:
-	cd $(NODE_DIR) && npm run build -- $(PLATFORM)
+	cd $(NODE_DIR) && npm run build
 
 build-backend:
 	cd $(PYTHON_DIR) && python setup.py sdist
 
-release-frontend:
+publish-frontend:
 	cd $(NODE_DIR) && npm run publish
 
 bumpversion:
