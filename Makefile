@@ -18,7 +18,7 @@ rename:
 	find . -path './.git' -prune -o -path ./Makefile -prune -o -path './react-app/assets' -prune -o -path './react-app/node_modules' -prune -o -exec sed -i "" 's/$(ALT_NAME)/$(NAME)/g' {} \;
 
 install-python-deps:
-	cd $(PYTHON_DIR) && pipenv install $(INSTALL_FLAG)
+	cd $(PYTHON_DIR) && pipenv install $(INSTALL_FLAG) --python $(shell which python3)
 
 install-node-deps:
 	cd $(NODE_DIR) && npm install $(INSTALL_FLAG)
